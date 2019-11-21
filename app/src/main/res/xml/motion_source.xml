@@ -3,51 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        app:constraintSetEnd="@id/end90"
-        app:constraintSetStart="@id/start" app:staggered="@android:integer/config_mediumAnimTime"
-        >
-
-        <!--<OnClick
-            app:targetId="@id/textView"
-            app:clickAction=""
-            />-->
-        <OnSwipe
-            app:dragDirection="dragDown"
-            app:touchAnchorId="@+id/textView"
-            app:touchAnchorSide="top" />
-
-    </Transition>
-    <Transition
-        app:constraintSetEnd="@id/end180"
-        app:constraintSetStart="@id/end90">
-
-        <!--<OnClick
-            app:targetId="@id/textView"
-            app:clickAction=""
-            />-->
-        <OnSwipe
-            app:dragDirection="dragDown"
-            app:touchAnchorId="@+id/textView"
-            app:touchAnchorSide="top" />
-
-    </Transition>
-    <Transition
-        app:constraintSetEnd="@id/end270"
-        app:constraintSetStart="@id/end180">
-
-        <!--<OnClick
-            app:targetId="@id/textView"
-            app:clickAction=""
-            />-->
-        <OnSwipe
-            app:dragDirection="dragDown"
-            app:touchAnchorId="@+id/textView"
-            app:touchAnchorSide="top" />
-
-    </Transition>
-    <Transition
         app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@id/end270">
+        app:constraintSetStart="@id/start">
 
         <!--<OnClick
             app:targetId="@id/textView"
@@ -68,83 +25,11 @@
         </Constraint>
         <Constraint android:id="@+id/textView2">
             <Transform
-                android:rotationX="90" />
+                android:rotationX="-90" />
         </Constraint>
     </ConstraintSet>
 
 
-    <ConstraintSet android:id="@+id/end90">
-        <Constraint android:id="@+id/textView">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="-90"/>
-        </Constraint>
-        <Constraint android:id="@+id/textView2">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="0"/>
-        </Constraint>
-    </ConstraintSet>
-    <ConstraintSet android:id="@+id/end180">
-        <Constraint android:id="@+id/textView">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="-180"/>
-        </Constraint>
-        <Constraint android:id="@+id/textView2">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="-90"/>
-        </Constraint>
-    </ConstraintSet>
-    <ConstraintSet android:id="@+id/end270">
-        <Constraint android:id="@+id/textView">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="-270"/>
-        </Constraint>
-        <Constraint android:id="@+id/textView2">
-            <Layout
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"/>
-            <Transform
-                android:rotationX="-180"/>
-        </Constraint>
-    </ConstraintSet>
     <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@+id/textView">
             <Layout
@@ -152,10 +37,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"/>
             <Transform
-                android:rotationX="0"/>
+                android:rotationX="-90"/>
         </Constraint>
         <Constraint android:id="@+id/textView2">
             <Layout
@@ -163,10 +48,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"/>
             <Transform
-                android:rotationX="-270"/>
+                android:rotationX="0"/>
         </Constraint>
     </ConstraintSet>
 
